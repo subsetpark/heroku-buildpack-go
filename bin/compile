@@ -2,6 +2,7 @@
 # usage: bin/compile <build-dir> <cache-dir> <env-dir>
 
 set -eo pipefail
+export GOFLAGS=-buildvcs=false
 
 [ "$BUILDPACK_XTRACE" ] && set -o xtrace
 
